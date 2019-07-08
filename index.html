@@ -1,39 +1,67 @@
+<!DOCTYPE html>
 <html>
 <head>
- <title></title>
- <link rel="stylesheet" type="text/css" href="style.css">
-<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+	<title>calculator</title>
+<style >
+#eql{
+	width: 134px;
+	background: #f9a94d
+}
+#a{
+	background: #f9a94d
+}
+
+.formstyle{
+	width:134px;
+	height:261px;
+	margin:auto;
+	border:2px solid black;
+}
+ 
+ input{
+ width:  42px;
+ 
+}
+
+#answerstyle{
+	width: 130px;
+}
+</style>
 </head>
-<body>
+<body style="background: #15cda8">
+	<div class="formstyle">
+	<form name="forms">
+    <input type="text" name="answer" id="answerstyle" ><br> </br>
 
-<header class="site-header clearfix">
- <nav>
-  <div class="logo">
-   <h1>Modern Website</h1>
-  </div>
-  <div class="menu"> 
-   <ul>
-    <li>Home</li>
-    <li>Services</li>
-    <li>AboutUs</li>
-    <li>ContactUs</li>
-   </ul>
-  </div>
- </nav>
- <section>
-  <div class="leftside"> 
-   <img src="images/intro.png">
-  </div>
-  <div class="rightside"> 
-   <h1>Our Modern Website</h1>
-   <p>  DONATION FOR SUPPORT:    PhonePay = vinodbahadur@ybl      GooglePay: vbthapa55@oksbi   Believe me, all this money will be used to make more quality videos and to make my channel grow. So that I can always provide you awesome free videos :)   </p>
-   <button>Welcome</button>
-  </div>
-  
- </section>
+<input type="button" value="1" onclick="forms.answerstyle.value +='1'" id="a">
+<input type="button" value="2" onclick="forms.answerstyle.value +='2'" id="a">
+<input type="button" value="3" onclick="forms.answerstyle.value +='3'" id="a">
+<br></br>
 
-</header>
+<input type="button" value="4" onclick="forms.answerstyle.value +='4'" id="a">
+<input type="button" value="5" onclick="forms.answerstyle.value +='5'"id="a">
+<input type="button" value="6" onclick="forms.answerstyle.value +='6'"id="a">
+<br></br>
 
+<input type="button" value="7" onclick="forms.answerstyle.value +='7'"id="a">
+<input type="button" value="8" onclick="forms.answerstyle.value +='8'"id="a">
+<input type="button" value="9" onclick="forms.answerstyle.value +='9'"id="a">
+<br></br>
+
+<input type="button" value="0" onclick="forms.answerstyle.value +='0'"id="a">
+<input type="button" value="+" onclick="forms.answerstyle.value +='+'"id="a">
+<input type="button" value="-" onclick="forms.answerstyle.value +='-'"id="a">
+<br></br>
+
+<input type="button" value="*" onclick="forms.answerstyle.value +='*'"id="a">
+<input type="button" value="/" onclick="forms.answerstyle.value +='/'"id="a">
+<input type="button" value="clr" onclick="forms.answerstyle.value =''"id="a">
+
+<br></br>
+
+<input type="button" value="=" onclick="forms.answerstyle.value =eval(forms.answerstyle.value)" id="eql">
+	</form>
+</div>
 
 </body>
 </html>
