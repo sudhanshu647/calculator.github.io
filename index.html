@@ -3,65 +3,85 @@
 <head>
 	<title>calculator</title>
 <style >
+
+
 #eql{
-	width: 134px;
+	width: 224px;
 	background: #f9a94d
 }
 #a{
-	background: #f9a94d
+	background: #DCDCDC
+
+}
+
+#b{
+	font-size: 140%;
+	
+	background: #EE82EE
 }
 
 .formstyle{
-	width:134px;
-	height:261px;
+
+	width:300px;
+	height:425px;
 	margin:auto;
-	border:2px solid black;
+	border:5px solid black;
+	background-color:#3d4543;
 }
  
  input{
- width:  42px;
- 
+ width:  72px;
+ height: 52px;
 }
 
 #answerstyle{
-	width: 130px;
+	text-align: right;
+	
+	font-size: x-large;
+	width: 295px;
 }
 </style>
 </head>
-<body style="background: #15cda8">
+<body>
 	<div class="formstyle">
 	<form name="forms">
-    <input type="text" name="answer" id="answerstyle" ><br> </br>
-
-<input type="button" value="1" onclick="forms.answerstyle.value +='1'" id="a">
+    <input type="text" name="answer" id="answerstyle" placeholder="0"  style="
+    background-color:#bccd95;border:3px solid black">
+    <br> </br>
+ <input type="button" value="1" onclick="forms.answerstyle.value +='1'" id="a">
 <input type="button" value="2" onclick="forms.answerstyle.value +='2'" id="a">
 <input type="button" value="3" onclick="forms.answerstyle.value +='3'" id="a">
+<input type="button" value="clr" onclick="forms.answerstyle.value =''"id="b">
 <br></br>
 
 <input type="button" value="4" onclick="forms.answerstyle.value +='4'" id="a">
 <input type="button" value="5" onclick="forms.answerstyle.value +='5'"id="a">
 <input type="button" value="6" onclick="forms.answerstyle.value +='6'"id="a">
+<input type="button" value="+" onclick="forms.answerstyle.value +='+'"id="b">
+
+
 <br></br>
 
 <input type="button" value="7" onclick="forms.answerstyle.value +='7'"id="a">
 <input type="button" value="8" onclick="forms.answerstyle.value +='8'"id="a">
 <input type="button" value="9" onclick="forms.answerstyle.value +='9'"id="a">
+<input type="button" value="-" onclick="forms.answerstyle.value +='-'"id="b">
+
+
 <br></br>
 
 <input type="button" value="0" onclick="forms.answerstyle.value +='0'"id="a">
-<input type="button" value="+" onclick="forms.answerstyle.value +='+'"id="a">
-<input type="button" value="-" onclick="forms.answerstyle.value +='-'"id="a">
-<br></br>
-
-<input type="button" value="*" onclick="forms.answerstyle.value +='*'"id="a">
+<input type="button" value="00" onclick="forms.answerstyle.value +='00'"id="a">
 <input type="button" value="/" onclick="forms.answerstyle.value +='/'"id="a">
-<input type="button" value="clr" onclick="forms.answerstyle.value =''"id="a">
+<input type="button" value="*" onclick="forms.answerstyle.value +='*'"id="b">
 
 <br></br>
 
 <input type="button" value="=" onclick="forms.answerstyle.value =eval(forms.answerstyle.value)" id="eql">
+<input type="button" value="." onclick="forms.answerstyle.value+='.'"id="b">
 	</form>
 </div>
 
 </body>
+
 </html>
